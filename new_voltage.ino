@@ -1,3 +1,11 @@
+
+// #include <cvzone.h>
+
+// SerialData serialData;
+
+// float sendVals[2];
+
+
 double Vout = 0;
 double Current = 0;
 const double scale_factor = 0.1;
@@ -37,6 +45,12 @@ void loop(){
   // Convert Vout into Current using Scale Factor
   // Current = ((Vout - zeroPoint)/ scale_factor)/1000000;                   
   Current = (Vout / R1)*1000 ;                   
+
+
+  // sendVals[0] = Vout;
+  // sendVals[1] = Current;
+  // serialData.Send(sendVals);
+
 
   // Print Vout and Current to two Current = ");                  
 
